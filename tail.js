@@ -19,5 +19,3 @@ console.log(tail(words));
 assertEqual(words.length, 3);
 assertEqual(tail([1]), []);
 assertEqual(tail([]), []);
-
-//1:14:33
