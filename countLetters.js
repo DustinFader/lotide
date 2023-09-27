@@ -15,6 +15,6 @@ const countLetters = (string) => {
     }
   }
   return letterCounts;
-}
+};
 
 console.log(countLetters("strong gork"));

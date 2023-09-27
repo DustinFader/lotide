@@ -1,15 +1,15 @@
 const letterPositions = function(sentence) {
   const results = {};
-  for(let i = 0; i < sentence.length; i++) {
+  for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") {
       if (results[sentence[i]] === undefined) {
         results[sentence[i]] = [];
       }
-      results[sentence[i]].push(i)
+      results[sentence[i]].push(i);
     }
   }
   return results;
-}
+};
 
 const eqArrays = (array1, array2) => {
   if (array1.length === array2.length) {
@@ -30,7 +30,7 @@ const assertArrayEqual = (array1, array2) => {
 
 
 let test = letterPositions("hello");
-assertArrayEqual(test["h"].join(","), [0].join(","))
-assertArrayEqual(test["e"].join(","), [1].join(","))
+assertArrayEqual(test["h"].join(","), [0].join(","));
+assertArrayEqual(test["e"].join(","), [1].join(","));
 assertArrayEqual(test["l"].join(","), [2,3].join(","));
 assertArrayEqual(test["o"].join(","), [4].join(","));
