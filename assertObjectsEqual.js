@@ -1,12 +1,12 @@
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length === Object.keys(object2).length) { //compare lengths
     for (let item of Object.keys(object1)) {
-      if (!eqArrays(object2[item], object1[item])) { 
+      if (!eqArrays(object2[item], object1[item])) {
         return false;
       }
     }
     return true;
-  } 
+  }
   return false;
 };
 
@@ -27,5 +27,5 @@ const assertObjectsEqual = (actual, expected) => {
 };
 
 
-let test = { i: "red", r:"bing"}
+let test = { i: "red", r:"bing"};
 assertObjectsEqual(test, {i:"red", r:"bing"});

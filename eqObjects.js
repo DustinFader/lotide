@@ -12,7 +12,7 @@ const eqObjects = function(object1, object2) {
       }
     }
     return true;
-  } 
+  }
   return false;
 };
 
