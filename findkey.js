@@ -24,3 +24,4 @@ const assertEqual = (actual, expected) => {
 assertEqual(test, "Alohora");
 assertEqual(findKey({path: "court", pinch: "jork", mort: "fort"}, x => x === "port"), undefined);
 assertEqual(findKey({path: "court", pinch: "jork", mort: "fort"}, x => x === "jork"), "pinch");
+assertEqual(findKey({treb: 2, "pork": "2", 1: "fort"}, x => x === "2"), "pork");
