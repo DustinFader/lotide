@@ -14,17 +14,17 @@ const assertArrayEqual = (array1, array2) => {
     console.log(`❤✅❤ Assertion Passed: ${array1} === ${array2}`);
   } else console.log(`🔴🤔🔴 Assertion Failed: ${array1} !== ${array2}`);
 };
-// loops through every item in givin array using a callback function on each and returns the new array. 
+// loops through every item in givin array using a callback function on each and returns the new array.
 const map = (arr, callback) => {
   const results = [];
   for (let item of arr) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
-const words = ["ground", "control", "to", "major", "tom"]; 
-const words1 = ["clean", "the", "pateo", "to", "not", "slip", "again"]; 
+const words = ["ground", "control", "to", "major", "tom"];
+const words1 = ["clean", "the", "pateo", "to", "not", "slip", "again"];
 console.log(map(words, word => word[0]));
 
 assertArrayEqual(map(words, word => word[0]), ["g", "c", "t", "m", "t"]);
