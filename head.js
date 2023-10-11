@@ -1,4 +1,4 @@
-//returns the head of the givin array
+// returns the head of the givin array
 const head = (arr) => {
   return arr[0];
 };
