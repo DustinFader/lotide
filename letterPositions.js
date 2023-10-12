@@ -1,4 +1,4 @@
-//takes in a string and returns an object where each letter has an array
+// takes in a string and returns an object where each letter has an array
 // of possitions where they would be
 const letterPositions = function(sentence) {
   const results = {}; //creates the output before any changes
