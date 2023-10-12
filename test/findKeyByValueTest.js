@@ -1,4 +1,5 @@
-
+const findKeyByValue = require("../findKeyByValue");
+const assertEqual = require("../assertEqual");
 
 // test cases
 const bestTVShowsByGenre = {

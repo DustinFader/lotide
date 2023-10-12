@@ -5,11 +5,12 @@ const middle = require('./middle');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const findKey = require('./findKey');
-const findKeyByValue = require('./findKeybyValue');
+const findKeyByValue = require('./findKeyByValue');
 const flatten = require('./flatten');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+const letterPositions = require('./letterPositions');
 
 module.exports = {
   head,
@@ -22,5 +23,6 @@ module.exports = {
   flatten,
   map,
   takeUntil,
-  without
+  without,
+  letterPositions
 };
