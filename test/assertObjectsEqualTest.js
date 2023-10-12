@@ -1,4 +1,4 @@
-
+const assertObjectsEqual = require("../assertObjectsEqual");
 
 // test cases
 let test = { i: "red", r:"bing"};
