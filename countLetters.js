@@ -1,3 +1,4 @@
+// Counts letters in givin string and returns an object with keys per letter and values based on how many times they appeared.
 const countLetters = (string) => {
   let letterCounts = {};
   for (let letter of string) {

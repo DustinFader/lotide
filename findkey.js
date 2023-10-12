@@ -5,4 +5,5 @@ const findKey = (object, callback) => {
     }
   }
 };
+
 module.exports = findKey;
