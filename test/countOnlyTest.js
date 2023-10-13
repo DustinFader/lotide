@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const countOnly = require("../countOnly");
+const _ = require("../index");
 
 // test cases
 const firstNames = [
@@ -14,7 +14,7 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+const result1 = _.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
 describe("#countOnly", () => {
   it("returns 1 from result1['Jason']", () => {
