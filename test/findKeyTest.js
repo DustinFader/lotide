@@ -1,5 +1,5 @@
+const assert = require("chai").assert;
 const findKey = require("../findKey");
-const assertEqual = require("../assertEqual");
 
 // test cases
 let test = findKey({
@@ -11,7 +11,19 @@ let test = findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2); // => "Alohora"
 
-// assertEqual(test, "Alohora");
-// assertEqual(findKey({path: "court", pinch: "jork", mort: "fort"}, x => x === "port"), undefined);
-// assertEqual(findKey({path: "court", pinch: "jork", mort: "fort"}, x => x === "jork"), "pinch");
-// assertEqual(findKey({treb: 2, "pork": "2", 1: "fort"}, x => x === "2"), "pork");
+describe("#findKey", () => {
+  it("returns Alohora form test variable holding the objent and callback", () => {
+    assert.strictEqual(test, "Alohora");
+  });
+  it("returns undefined", () => {
+    assert.strictEqual(findKey({path: "court", pinch: "jork", mort: "fort"}, x => x === "port"), undefined);
+  });
+
+  it('returns "pinch"', () => {
+    assert.strictEqual(findKey({path: "court", pinch: "jork", mort: "fort"}, x => x === "jork"), "pinch");
+  });
+
+  it('returns "pork"', () => {
+    assert.strictEqual(findKey({treb: 2, "pork": "2", 1: "fort"}, x => x === "2"), "pork");
+  });
+});

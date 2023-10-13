@@ -3,7 +3,6 @@ const middle = require('../middle');
 
 // // middle test cases
 describe("#middle", () => {
-  
   it("returns empty array from [1,2]", () => {
     assert.deepEqual(middle([1, 2]), []);
   });
