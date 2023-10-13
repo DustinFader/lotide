@@ -26,8 +26,9 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `countLetters(string)`: Counts letters in givin string and returns an object with keys per letter and values based on how many times they appeared. example: "strings" = { s:2, t:1, r:1, i:1, n:1, g:1 }
-* `countOnly(array, object)`: Counts letters in givin string and returns an object with keys per letter and values based on how many times they appeared.
+* `countLetters(string)`: Counts letters in givin string and returns an object with keys per letter and values based on how many times they appeared. Example: "strings" = { s:2, t:1, r:1, i:1, n:1, g:1 }
+* `countOnly(array, object)`: If key in object exists in array and keys value is true counts every reference in array of every key and returns the result as an object. 
+Example: ["string", "string", "node"], { string: true } = { string: 2 }
 * `findKey(object, callback)`: Checks the givin objects values of object where if callback determines the first value it reaches is true then returns its key.
 * `findKeyByValue(object, string)`: Checks the givin values of object where the first value it comes across equals the same as the value givin then returns its key.
 * `head(array)`: Returns the head of the givin array aka the first element.
