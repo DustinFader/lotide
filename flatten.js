@@ -1,3 +1,5 @@
+// Takes every element in a nested array and puts them into a non-nested array.
+// maybe a todo of turning this into a recursive function
 const flatten = (arr) => {
   let newArray = [];
   for (let item of arr) {
