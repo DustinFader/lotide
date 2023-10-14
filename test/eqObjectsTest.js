@@ -24,4 +24,16 @@ describe("#eqObjects", () => {
   it('returns false when givin objects are compared and are not equal', () => {
     assert.strictEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
   });
+
+  it('returns true when nested objects are compared and are equal', () => {
+    assert.strictEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true);
+  });
+
+  it('returns false when nested objects are compared and are not equal', () => {
+    assert.strictEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 },    { a: { z: 1 }, b: 2 }), false);
+  });
+
+  it('returns false when nested objects are compared and are not equal', () => {
+    assert.strictEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 },    { a: 1, b: 2 }), false);
+  });
 });
