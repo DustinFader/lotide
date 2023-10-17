@@ -1,6 +1,6 @@
 {
   "name": "@dustinader/lotide",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "lotide clone for learning purposes",
   "main": "index.js",
   "directories": {
