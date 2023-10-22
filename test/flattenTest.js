@@ -8,6 +8,6 @@ describe("#flatten", () => {
   });
 
   it("returns [1,2,1,2,1,4,5] from multi-nested array", () => {
-    assert.deepEqual(flatten([1,2,[1,2,[1,[4],5]]]), [1,2,1,2,1,4,5])
+    assert.deepEqual(flatten([1,2,[1,2,[1,[4],5]]]), [1,2,1,2,1,4,5]);
   });
 });

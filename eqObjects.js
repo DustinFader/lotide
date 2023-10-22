@@ -8,12 +8,12 @@ const eqObjects = function(object1, object2) {
       let item2 = object2[item];
 
       if (typeof item1 === "object" && !Array.isArray(item1)) {
-        if (!eqObjects(item1, item2)){
+        if (!eqObjects(item1, item2)) {
           return false;
         }
       }
       //goes through the arrays checking if each matches.
-      if (!eqArrays(item1, item2)) { 
+      if (!eqArrays(item1, item2)) {
         return false;
       }
     }

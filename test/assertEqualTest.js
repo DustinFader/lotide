@@ -1,5 +1,5 @@
-const assert = require("chai").assert;
-const _ = require("../index");
+// const assert = require("chai").assert;
+// const _ = require("../index");
 
 // assertEqual Test code
 // assertEqual("Lighthouse Labs", "Bootcamp");

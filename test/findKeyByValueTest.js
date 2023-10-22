@@ -3,7 +3,7 @@ const findKeyByValue = require("../findKeyByValue");
 
 // test cases
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire"
 };
@@ -17,7 +17,7 @@ describe("#findKeyByValue", () => {
     assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
   });
   it('returns sci_fi from (bestTVShowsByGenre, "The Expanse")', () => {
-    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi");
   });
   it('returns undefined from (bestTVShowsByGenre, "")', () => {
     assert.strictEqual(findKeyByValue(bestTVShowsByGenre, ""), undefined);

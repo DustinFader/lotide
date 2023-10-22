@@ -16,7 +16,7 @@ describe("#head", () => {
   });
 
   it('returns undefined from [, 0] which would be undefined at the spot of the array', () => {
-    assert.strictEqual(head([, 0]),); //eslint may say this is wrong but i wanted to test it this way anyways.
+    assert.strictEqual(head([undefined, 0]),);
   });
 
   it('returns 0 from [0]', () => {

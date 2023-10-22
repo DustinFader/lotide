@@ -1,4 +1,4 @@
-// We look through the array of allItems and adds those that exist in itemsToCount object and how many 
+// We look through the array of allItems and adds those that exist in itemsToCount object and how many
 // there are in the array into an object then returns that object.
 const countOnly = function(allItems, itemsToCount) {
   let results = {};
